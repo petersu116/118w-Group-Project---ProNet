@@ -1,0 +1,17 @@
+#bottommenu {position:relative; height:25px; top:25px; border-spacing:0; margin-left: 30px;}
+#bottommenu td {border-width:0 3px 0 0; border-style:solid;  border-color:#752036; padding:3px 29px;}
+#bottommenu #bottommenu_column1 {border-width:0 3px; border-style:solid;  border-color:#752036; }
+.bottommenu_address {text-align:center; width:170px; color:#e5b8c4; font-size:13px;}
+.bottommenu_contact {text-align:center; width:160px; color:#e5b8c4; font-size:13px;}
+.bottommenu_link {text-align:center; width:65px;}
+.bottommenu_link a {text-decoration: none;}
+.bottommenu_link a:hover {text-decoration:underline;}
+.bottommenu_link a:link {color:#ffcca6;}
+.bottommenu_link a:-webkit-any-link {color:#ffcca6;}
+.bottommenu_link a:visited {color:#ffcca6;}
+#bottomcontacts {color:#e5b8c4; line-height:20px; font-family:Arial; margin:30px auto 20px auto; width:410px; height:40px; white-space:nowrap; font-size:13px;}
+#bottomcontacts a {text-decoration: none;}
+#bottomcontacts a:hover {text-decoration:underline;}
+#bottomcontacts a:link {color:#ffcca6;}
+#bottomcontacts a:-webkit-any-link {color:#ffcca6;}
+#bottomcontacts a:visited {color:#ffcca6;}

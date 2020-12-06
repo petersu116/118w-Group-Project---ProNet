@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8"/>
+  <title>ProNet</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./main.css" type="text/css" />
+
+<script type="text/javascript">
+  $("#slideshow > div:gt(0)").hide();
+
+  setInterval(function() {
+    $('#slideshow > div:first')
+     .fadeOut(1000)
+     .next()
+     .fadeIn(1000)
+     .end()
+     .appendTo('#slideshow');
+  }, 3000);
+</script>
+<style>
+  #slideshow {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  }
+</style>
+
+</head>
+<body>
+
+  <!--Header-->
+  <div id="header">
+      <link href="./topMenu.css" rel="stylesheet" />
+      <div class="content" style="top:19px; background:#800627;">
+        <!--Company logo picture-->
+        <div id="logo">
+          <a href="./index.html">
+          <img src="./ProNet Logo.png" ; width="200px"/>
+          </a>
+        </div>
+        <!--logo end-->
+
+        <!--Search bar-->
+        <div id="search-bar">
+          <form method="get" action="https://www.google.com/" target="_blank">
+            <input id="search-box" type="text" name="q" placeholder="Type in Key words">
+            <input type="submit" style="visibility:hidden">
+          </form>
+        </div><!--Search bar end!-->
+
+        <!--top menu bar-->
+        <div id="topmenu">
+          <h4 id="homepage" style="width:72px; position:absolute; z-index:21;"><span><a href="index.html">Home</a></span></h4>
+          <h4 id="topmenu_header1" style="width: auto;"><span><a href="jobOpp.html">Job Opportunities</a></span></h4>
+          <h4 id="topmenu_header2" style="width: auto;"><span><a href="About.html">About</a></span></h4>
+          <h4 id="topmenu_header3" style="width: auto;"><span><a href="Salary.html">Salary</a></span></h4>
+        </div>
+        <!--Header end!-->
+
+  <div id="main">
+      <div id="slideshow">
+        <div>
+        <a href="https://fee.org/articles/why-you-should-go-to-more-conferences-and-fewer-networking-events-to-build-a-world-class-network/" target="_blank"><img class="slide" src="conf1.png" style="width:100%"></a>
+        </div>
+        <div>
+        <a href="https://www.salesforce.com/ca/blog/2016/05/successfully-network-event.html" target="_blank"><img class="slide" src="conf2.jpg" style="width:100%"></a>
+        </div>
+        <div>
+        <a href="https://biomedicalodyssey.blogs.hopkinsmedicine.org/2019/12/the-dreaded-networking-event-how-a-pdco-workshop-changed-my-perspective/" target="_blank"><img class="slide" src="conf3.jpg" style="width:100%"></a>
+        </div> 
+      </div>
+  </div><!--main end-->
+
+  <!--Footer-->
+  <link href="./footer.css" rel="stylesheet" />
+  <div class="content" style="background:#61051d;">
+    <table id="bottommenu">
+      <tr>
+        <td id="bottommenu_column1">
+          <div class="bottommenu_address">The ProNet Team 2020<br>One Washington Square<br>San Jose, CA 95192
+          </div>
+        </td>
+        <td>
+          <div class="bottommenu_contact">Phone: 408-408-4084<br>Email: office@pronet.com</div>
+        </td>
+        <td>
+          <div class="bottommenu_link"><a href="Donation.html">Donation</a>
+        <td>
+          <div class="bottommenu_link"><a href="Feedback.html">Feedback</a></div>
+        </td>
+        <td>
+          <div class="bottommenu_link"><a href="copyright.html">Copyright</a></div>
+        </td></td>
+      </tr>
+    </table>
+  </div>
+  <!--Footer end!-->
+
+</body>
+</html>
